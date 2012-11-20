@@ -32,7 +32,7 @@ mail_count+=(["script"]="${segments_path}/mail_count_maildir.sh")
 mail_count+=(["foreground"]="white")
 mail_count+=(["background"]="red")
 mail_count+=(["separator"]="${separator_left_bold}")
-register_segment "mail_count"
+# register_segment "mail_count"
 
 declare -A now_playing
 if [ "$PLATFORM" == "linux" ]; then
@@ -85,7 +85,7 @@ weather+=(["script"]="${segments_path}/weather_yahoo.sh")
 weather+=(["foreground"]="colour255")
 weather+=(["background"]="colour37")
 weather+=(["separator"]="${separator_left_bold}")
-register_segment "weather"
+#register_segment "weather"
 
 declare -A xkb_layout
 if [ "$PLATFORM" == "linux" ]; then
@@ -101,7 +101,7 @@ date_day+=(["script"]="${segments_path}/date_day.sh")
 date_day+=(["foreground"]="colour136")
 date_day+=(["background"]="colour235")
 date_day+=(["separator"]="${separator_left_bold}")
-register_segment "date_day"
+#register_segment "date_day"
 
 declare -A date_full
 date_full+=(["script"]="${segments_path}/date_full.sh")
